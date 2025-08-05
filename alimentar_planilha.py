@@ -14,9 +14,11 @@ pt.PAUSE = 0.5
 pt.keyDown('Alt')
 pt.press('Tab')
 pt.keyUp('Alt')
-pt.click(x=151, y=974) # AVALIACOES
+circulo_data = pt.locateCenterOnScreen('imagens\_avaliacoes.png', confidence=0.7) # ENCONTRAR O ICONE NA PAGINA
+pt.click() # CLICA
 time.sleep(1)
-pt.click(x=672, y=315) # AVALIACOES E COMENTARIOS
+circulo_data = pt.locateCenterOnScreen('imagens\_filtros.png', confidence=0.7) # ENCONTRAR O ICONE DOS FILTROS
+pt.click() # CLICA
 time.sleep(1)
 
 #FILTROS =======================================================================================
@@ -30,8 +32,8 @@ pt.press('Delete')
 pt.write(data_inicio)
 pt.scroll(-60)
 circulo_data = pt.locateCenterOnScreen('D:\Trabalho\Veloci\_Bots\Aloisio\Feedback de Clientes\imagens\circulo_data.png', confidence=0.7) # ENCONTRAR O ICONE NA PAGINA
-pt.moveTo(circulo_data, duration=0.5) # CLICA NA DATA DENTRO DO CALENDARIO
-pt.click()
+pt.moveTo(circulo_data, duration=0.5) # MOVE PARA A DATA DENTRO DO CALENDARIO
+pt.click() # CLICA
 
 time.sleep(1.5)
 
@@ -39,8 +41,8 @@ pt.tripleClick(x=1408, y=700) # MOVER PARA "ATE" & SELECIONAR O CAMPO COMPLETO
 pt.press('Delete')
 pt.write(data_final)
 circulo_data = pt.locateCenterOnScreen('D:\Trabalho\Veloci\_Bots\Aloisio\Feedback de Clientes\imagens\circulo_data.png', confidence=0.7) # ENCONTRAR O ICONE NA PAGINA
-pt.moveTo(circulo_data, duration=0.5) # CLICA NA DATA DENTRO DO CALENDARIO
-pt.click()
+pt.moveTo(circulo_data, duration=0.5) # MOVE PARA A DATA DENTRO DO CALENDARIO
+pt.click() # CLICA
 
 pt.click(x=1357, y=800) # POSSUI COMENTARIOS
 pt.click(x=1305, y=886) # SIM
@@ -79,7 +81,7 @@ for i in range(repeticao):
     time.sleep(1)
 
 # COLAR NO EXCEL ================================================================================
-    pt.hotkey('Ctrl', 'V')
+    pt.hotkey('Ctrl', 'Shift', 'V')
     pt.keyDown('Ctrl')
     pt.press('Down')
     pt.keyUp('Ctrl')
