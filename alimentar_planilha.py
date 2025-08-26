@@ -1,11 +1,12 @@
 import pyautogui as pt
 import pyperclip as pp
+from datetime import datetime
 import time
 import os
 
 repeticao = int(input('Quantas páginas de pedidos? - '))
 data_inicio = str(input('Qual a data de INICIO? (00/00/0000) - '))
-data_final = str(input('Qual a data de FINAL? (00/00/0000) - '))
+data_final = datetime.now().strftime('%d/%m')
 cel = str(input('Em qual celula começar a alimentar na planilha? - '))
 
 print("""Padrão das Abas:
