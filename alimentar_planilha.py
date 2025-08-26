@@ -8,6 +8,16 @@ data_inicio = str(input('Qual a data de INICIO? (00/00/0000)'))
 data_final = str(input('Qual a data de FINAL? (00/00/0000)'))
 cel = str(input('Em qual celula começar a alimentar na planilha? '))
 
+print("""Padrão das Abas:
+      
+    _Atrás do cmd_
+      ABA_01 - Chrome com a pagina do Ifood
+      ABA_02 - Excel com a planilha aberta
+
+""")
+
+input('Pressione "Enter" quando puder começar... ')
+
 pt.PAUSE = 0.5
 
 # ABRIR PAGINA DE AVALIACOES ===================================================================
