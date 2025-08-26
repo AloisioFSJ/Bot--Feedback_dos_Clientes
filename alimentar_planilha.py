@@ -10,10 +10,9 @@ cel = str(input('Em qual celula começar a alimentar na planilha? - '))
 
 print("""Padrão das Abas:
       
-    _Atrás do cmd_
+            (Atrás do cmd)
       ABA_01 - Chrome com a pagina do Ifood
       ABA_02 - Excel com a planilha aberta
-
 """)
 
 input('Pressione "Enter" quando puder começar... ')
