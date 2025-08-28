@@ -105,3 +105,4 @@ for i in range(repeticao):
     pt.click()
     pt.scroll(414)
 
+print('✅ FINALIADO')
