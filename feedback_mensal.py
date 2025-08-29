@@ -1,5 +1,3 @@
-from datetime import datetime
-import pandas as pd
 import pyautogui as pt
 import pyperclip as pp
 import time
