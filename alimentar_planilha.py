@@ -34,7 +34,7 @@ for i in range(repeticao):
     pt.scroll(200)
     
     # COPIAR FEEDBACKS DOS CLIENTES
-    pt.moveTo(x=393, y=240)
+    pt.moveTo(x=498, y=240)
     pt.mouseDown(button='left')
     pt.moveTo(x=1707, y=987, duration=0.5)
 
