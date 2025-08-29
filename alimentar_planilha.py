@@ -64,7 +64,7 @@ for i in range(repeticao):
     pt.scroll(-800)
     time.sleep(1)
     seta_vermelha = pt.locateCenterOnScreen('C:\_Codes\Feedback dos Clientes\Imagens\seta_vermelha.png', confidence=0.9)
-    pt.moveTo(seta_vermelha, duration=1)
+    pt.moveTo(seta_vermelha, duration=0.5)
     pt.click()
 
     time.sleep(3)
